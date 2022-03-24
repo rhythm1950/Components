@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="review.css">
+</head>
+
+<body>
+    <section class="review-container">
+
+        <div class="slide-container active">
+
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+
+                <div class="user">
+                    <img src="images/client1.jpg" alt="client">
+
+                    <div class="userinfo">
+                        <h3>John Doe</h3>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="review-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae perferendis non blanditiis
+                    sint hic enim odit illo, atque eligendi nemo rerum, magni itaque a dolore suscipit possimus ab
+                    minima.
+                </p>
+            </div>
+        </div>
+
+        <div class="slide-container">
+
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+
+                <div class="user">
+                    <img src="images/client2.jpg" alt="client">
+
+                    <div class="userinfo">
+                        <h3>John Doe</h3>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="review-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae perferendis non blanditiis
+                    sint hic enim odit illo, atque eligendi nemo rerum, magni itaque a dolore suscipit possimus ab
+                    minima.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="slide-container">
+            
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+
+                <div class="user">
+                    <img src="images/client3.jpg" alt="client">
+
+                    <div class="userinfo">
+                        <h3>John Doe</h3>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="review-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae perferendis non blanditiis
+                    sint hic enim odit illo, atque eligendi nemo rerum, magni itaque a dolore suscipit possimus ab
+                    minima.
+                </p>
+            </div>
+        </div>
+
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+
+    </section>
+
+
+    <script>
+        let slides = document.querySelectorAll('.slide-container');
+        let index = 0;
+
+        function next() {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }
+        function prev() {
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

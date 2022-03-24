@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    position: relative;
+}
+.slide {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+.slide video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: fadeIn .4s linear;
+}
+@keyframes fadeIn {
+    0%{
+        transform: scale(.5);
+    }
+}
+.content {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.content h3 {
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    animation: animate .4s linear .4s backwards;
+}
+.content p {
+    font-size: 15px;
+    color: #eee;
+    padding: 5px 0;
+    font-weight: lighter;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    animation: animate .4s linear .6s backwards;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 9px 30px;
+    font-size: 17px;
+    color: #fff;
+    background: transparent;
+    box-shadow: 0 10px 30px rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 10px;
+    transition: .2s linear;
+    cursor: pointer;
+    animation: animate .4s linear 1s backwards;
+}
+.btn:hover {
+    letter-spacing: 2px;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: scale(.5) translateY(-50px);
+    }
+}
+.slide-container {
+    display: none;
+}
+.slide-container.active {
+    display: block;
+}
+#next, #prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    width: 50px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 30px;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    z-index: 100;
+    font-weight: bold;
+}
+#next {
+    right: 0px;
+}
+#next:hover, #prev:hover {
+    background: #333;
+    color: #fff;
+} 
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Video</title>
+    <link rel="stylesheet" href="fullVideo.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <h3>Video Slider 01</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officia, ipsam aliquid consectetur nobis amet magnam a nemo. Libero dicta corporis, commodi nihil temporibus eos maxime, voluptatem </p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <video src="videos/vid1.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>Video Slider 02</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officia, ipsam aliquid consectetur nobis amet magnam a nemo. Libero dicta corporis, commodi nihil temporibus eos maxime, voluptatem </p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <video src="videos/vid2.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>Video Slider 03</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officia, ipsam aliquid consectetur nobis amet magnam a nemo. Libero dicta corporis, commodi nihil temporibus eos maxime, voluptatem </p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <video src="videos/vid3.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>Video Slider 04</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officia, ipsam aliquid consectetur nobis amet magnam a nemo. Libero dicta corporis, commodi nihil temporibus eos maxime, voluptatem </p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <video src="videos/vid4.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        
+    </div>
+
+        <script>
+            let slides = document.querySelectorAll('.slide-container');
+            let index = 0;
+    
+            function next() {
+                slides[index].classList.remove('active');
+                index = (index + 1) % slides.length;
+                slides[index].classList.add('active');
+            }
+            function prev() {
+                slides[index].classList.remove('active');
+                index = (index - 1 + slides.length) % slides.length;
+                slides[index].classList.add('active');
+            }
+        </script>
+
+</body>
+</html>

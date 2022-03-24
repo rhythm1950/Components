@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="parallax.css">
+</head>
+
+<body>
+    <header>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#" data-text="home">home</a>
+            <a href="#" data-text="about">about</a>
+            <a href="#" data-text="gallery">gallery</a>
+            <a href="#" data-text="portfolio">portfolio</a>
+            <a href="#" data-text="blogs">blogs</a>
+            <a href="#" data-text="contact">contact</a>
+        </nav>
+
+    </header>
+
+    <!-- hero section starts -->
+
+    <div class="hero">
+        <h3 class="text">Adventure is worthwhile</h3>
+        <img src="images/mountain.png" alt="mountain">
+    </div>
+
+
+    <!-- about section starts -->
+
+    <div class="content">
+        <h3>Simple Parallax Effect</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex quae ipsa maiores architecto,
+            tempore voluptate quisquam magnam distinctio soluta illo quibusdam fugit nesciunt asperiores sunt deserunt
+            temporibus dignissimos recusandae.
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, repellendus est non necessitatibus inventore
+            praesentium. Sit minima suscipit odio quo praesentium nobis. Eveniet ex, maiores totam quaerat excepturi
+            voluptatum eius fugit molestias quod autem laboriosam aliquid, nemo dolorem alias nulla eligendi quidem!
+            Nemo optio debitis repudiandae, fugit repellendus impedit voluptatem?
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque culpa, ut temporibus reiciendis nihil
+            quibusdam accusantium illo corrupti perspiciatis quas magni recusandae porro, ipsa quos. Consequatur
+            sapiente nihil odit deleniti!
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum natus quod placeat in numquam vel
+            doloremque at quidem dolores?
+        </p>
+    </div>
+
+    <!-- Gallery section starts -->
+
+    <section class="gallery-section">
+        <div class="gallery">
+
+            <h2 class="gallery-title">OUR GALLERY</h2>
+
+            <ul class="controls">
+                <li class="buttons active" data-filter="all">all items</li>
+                <li class="buttons" data-filter="ice-cream">ice-cream</li>
+                <li class="buttons" data-filter="chocolate">chocolate</li>
+                <li class="buttons" data-filter="sandwich">sandwich</li>
+            </ul>
+
+            <div class="image-container">
+
+                <a href="images/baked-chicken-wings-asian-style_2829-10159.jpg" class="image ice-cream">
+                    <img src="images/baked-chicken-wings-asian-style_2829-10159.jpg" alt="">
+                </a>
+                <a href="images/chicken-steak-with-lemon-tomato-chili-carrot-white-plate_1150-25887.jpg"
+                    class="image sandwich">
+                    <img src="images/chicken-steak-with-lemon-tomato-chili-carrot-white-plate_1150-25887.jpg" alt="">
+                </a>
+                <a href="images/healthy-hearty-salad-tuna-green-beans-tomatoes-eggs-potatoes-black-olives-close-up-bowl-table_2829-4485.jpg"
+                    class="image ice-cream">
+                    <img src="images/healthy-hearty-salad-tuna-green-beans-tomatoes-eggs-potatoes-black-olives-close-up-bowl-table_2829-4485.jpg"
+                        alt="">
+                </a>
+
+                <a href="images/pasta-spaghetti-with-shrimps-sauce_1220-5072.jpg" class="image ice-cream">
+                    <img src="images/pasta-spaghetti-with-shrimps-sauce_1220-5072.jpg" alt="">
+                </a>
+                <a href="images/restaurant_661153_0.jpg" class="image chocolate">
+                    <img src="images/restaurant_661153_0.jpg" alt="">
+                </a>
+
+                <a href="images/shrimp-salad-with-boiled-egg-lettuce-chopped-scallions-white-plate_1150-26958.jpg"
+                    class="image sandwich">
+                    <img src="images/shrimp-salad-with-boiled-egg-lettuce-chopped-scallions-white-plate_1150-26958.jpg"
+                        alt="">
+                </a>
+                <a href="images/side-view-doner-with-grilled-chicken-greens-lettuce-tomato-french-fries-table_141793-4881.jpg"
+                    class="image chocolate">
+                    <img src="images/side-view-doner-with-grilled-chicken-greens-lettuce-tomato-french-fries-table_141793-4881.jpg"
+                        alt="">
+                </a>
+                <a href="images/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg" class="image chocolate">
+                    <img src="images/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg" alt="">
+                </a>
+                <a href="images/fried-rice-plate-white-wooden-floor_1150-28473.jpg" class="image sandwich">
+                    <img src="images/fried-rice-plate-white-wooden-floor_1150-28473.jpg" alt="">
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- cards section starts -->
+
+    <section>
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas doloribus pariatur inventore
+                    optio. Reiciendis doloremque saepe aut tempore quae explicabo aspernatur sit aperiam nisi facilis.
+                </p>
+                <a href="#"><button>Read More</button></a>
+                <span class="number">1</span>
+            </div>
+
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas doloribus pariatur inventore
+                    optio. Reiciendis doloremque saepe aut tempore quae explicabo aspernatur sit aperiam nisi facilis.
+                </p>
+                <a href="#"><button>Read More</button></a>
+                <span class="number">2</span>
+            </div>
+
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas doloribus pariatur inventore
+                    optio. Reiciendis doloremque saepe aut tempore quae explicabo aspernatur sit aperiam nisi facilis.
+                </p>
+                <a href="#"><button>Read More</button></a>
+                <span class="number">3</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog timeline starts here -->
+
+    <section>
+
+        <div class="blog-container">
+
+            <div class="timeline">
+                <div class="year">2020</div>
+                <div class="blog-content">
+                    <h3 class="title">Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ea voluptas dolorum delectus
+                        ducimus repellendus explicabo quod possimus minima sapiente est corporis voluptate dolore
+                        impedit
+                        officia laudantium soluta enim iusto, perspiciatis sunt obcaecati, culpa adipisci quia. Dolore
+                        in
+                        nobis expedita!</p>
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="year">2019</div>
+                <div class="blog-content">
+                    <h3 class="title">Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ea voluptas dolorum delectus
+                        ducimus repellendus explicabo quod possimus minima sapiente est corporis voluptate dolore
+                        impedit
+                        officia laudantium soluta enim iusto, perspiciatis sunt obcaecati, culpa adipisci quia. Dolore
+                        in
+                        nobis expedita!</p>
+                    <i class="fas fa-tools"></i>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="year">2018</div>
+                <div class="blog-content">
+                    <h3 class="title">Graphics Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ea voluptas dolorum delectus
+                        ducimus repellendus explicabo quod possimus minima sapiente est corporis voluptate dolore
+                        impedit
+                        officia laudantium soluta enim iusto, perspiciatis sunt obcaecati, culpa adipisci quia. Dolore
+                        in
+                        nobis expedita!</p>
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="year">2017</div>
+                <div class="blog-content">
+                    <h3 class="title">SEO Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ea voluptas dolorum delectus
+                        ducimus repellendus explicabo quod possimus minima sapiente est corporis voluptate dolore
+                        impedit
+                        officia laudantium soluta enim iusto, perspiciatis sunt obcaecati, culpa adipisci quia. Dolore
+                        in
+                        nobis expedita!</p>
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ section starts -->
+
+    <section>
+
+        <div class="faq-container">
+
+            <div class="faq-div">
+                <details>
+                    <summary>Accordion menu 1</summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium saepe, dignissimos sunt
+                        possimus asperiores nulla ex quo est harum iusto. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Harum, repudiandae quisquam, commodi dolorem vel provident adipisci quo, quos
+                        veniam exercitationem iure officiis perferendis soluta unde? Veritatis sint incidunt maxime
+                        reiciendis!</p>
+                </details>
+
+                <details>
+                    <summary>Accordion menu 2</summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium saepe, dignissimos sunt
+                        possimus asperiores nulla ex quo est harum iusto Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Harum, repudiandae quisquam, commodi dolorem vel provident adipisci quo, quos
+                        veniam exercitationem iure officiis perferendis soluta unde? Veritatis sint incidunt maxime
+                        reiciendis!?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nam?</p>
+                </details>
+
+                <details>
+                    <summary>Accordion menu 3</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nam Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Harum, repudiandae quisquam, commodi dolorem vel provident
+                        adipisci quo, quos veniam exercitationem iure officiis perferendis soluta unde? Veritatis sint
+                        incidunt maxime reiciendis!</p>
+                </details>
+
+                <details>
+                    <summary>Accordion menu 4</summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium saepe, dignissimos sunt
+                        possimus asperiores nulla ex quo est harum iusto Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus, aliquam. Optio magni vero illum aspernatur deleniti, quod
+                        corrupti quibusdam nam!</p>
+                </details>
+
+                <details>
+                    <summary>Accordion menu 5</summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium saepe, dignissimos sunt
+                        possimus asperiores nulla ex quo est harum iusto Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Harum, repudiandae quisquam, commodi dolorem vel provident adipisci quo, quos
+                        veniam exercitationem iure officiis perferendis soluta unde? Veritatis sint incidunt maxime
+                        reiciendis!?</p>
+                </details>
+
+            </div>
+        </div>
+
+        <!-- <div class="faq-container2">
+
+            <div class="faq-div">
+                <details>
+                    <summary>Accordion menu 1</summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium saepe, dignissimos sunt possimus asperiores nulla ex quo est harum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, repudiandae quisquam, commodi dolorem vel provident adipisci quo, quos veniam exercitationem iure officiis perferendis soluta unde? Veritatis sint incidunt maxime reiciendis!</p>
+                </details>
+    
+                <details>
+                    <summary>Accordion menu 2</summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium saepe, dignissimos sunt possimus asperiores nulla ex quo est harum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, repudiandae quisquam, commodi dolorem vel provident adipisci quo, quos veniam exercitationem iure officiis perferendis soluta unde? Veritatis sint incidunt maxime reiciendis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nam?</p>
+                </details>
+    
+                <details>
+                    <summary>Accordion menu 3</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, repudiandae quisquam, commodi dolorem vel provident adipisci quo, quos veniam exercitationem iure officiis perferendis soluta unde? Veritatis sint incidunt maxime reiciendis!</p>
+                </details>
+    
+                <details>
+                    <summary>Accordion menu 4</summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium saepe, dignissimos sunt possimus asperiores nulla ex quo est harum iusto Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, aliquam. Optio magni vero illum aspernatur deleniti, quod corrupti quibusdam nam!</p>
+                </details>
+    
+                <details>
+                    <summary>Accordion menu 5</summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium saepe, dignissimos sunt possimus asperiores nulla ex quo est harum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, repudiandae quisquam, commodi dolorem vel provident adipisci quo, quos veniam exercitationem iure officiis perferendis soluta unde? Veritatis sint incidunt maxime reiciendis!</p>
+                </details>
+    
+            </div>
+        </div> -->
+
+    </section>
+
+    <!-- testimonial section starts -->
+
+    <section class="review-section">
+
+        <div class="review-container">
+
+            <div class="slide-container active">
+
+                <div class="slide">
+                    <i class="fas fa-quote-right icon"></i>
+
+                    <div class="user">
+                        <img src="images/client1.jpg" alt="client">
+
+                        <div class="userinfo">
+                            <h3>John Doe</h3>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae perferendis non blanditiis
+                        sint hic enim odit illo, atque eligendi nemo rerum, magni itaque a dolore suscipit possimus ab
+                        minima.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide-container">
+
+                <div class="slide">
+                    <i class="fas fa-quote-right icon"></i>
+
+                    <div class="user">
+                        <img src="images/client2.jpg" alt="client">
+
+                        <div class="userinfo">
+                            <h3>John Doe</h3>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae perferendis non blanditiis
+                        sint hic enim odit illo, atque eligendi nemo rerum, magni itaque a dolore suscipit possimus ab
+                        minima.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="slide-container">
+
+                <div class="slide">
+                    <i class="fas fa-quote-right icon"></i>
+
+                    <div class="user">
+                        <img src="images/client3.jpg" alt="client">
+
+                        <div class="userinfo">
+                            <h3>John Doe</h3>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi beatae perferendis non blanditiis
+                        sint hic enim odit illo, atque eligendi nemo rerum, magni itaque a dolore suscipit possimus ab
+                        minima.
+                    </p>
+                </div>
+            </div>
+
+            <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+            <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+
+        </div>
+    </section>
+
+    <!-- team section starts -->
+
+    <section>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/member1.jpeg" alt="team member">
+                <div class="member-info">
+                    <h3 class="member-name">John Doe</h3>
+                    <span class="post">Web designer/ developer</span>
+
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/member2.jpeg" alt="team member">
+                <div class="member-info">
+                    <h3 class="member-name">John Doe</h3>
+                    <span class="post">Web designer/ developer</span>
+
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/member3.jpeg" alt="team member">
+                <div class="member-info">
+                    <h3 class="member-name">John Doe</h3>
+                    <span class="post">Web designer/ developer</span>
+
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/member1.jpeg" alt="team member">
+                <div class="member-info">
+                    <h3 class="member-name">John Doe</h3>
+                    <span class="post">Web designer/ developer</span>
+
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        window.onscroll = () => {
+            let value = window.scrollY;
+            document.querySelector('.text').style.top = -value * 1 + 'px';
+        }
+
+        document.querySelector('#menu-btn').onclick = () => {
+            document.querySelector('#menu-btn').classList.toggle('fa-times');
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+
+        $(document).ready(function () {
+
+            $('.buttons').click(function () {
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var filter = $(this).attr('data-filter')
+
+                if (filter == 'all') {
+                    $('.image').show(400);
+                } else {
+                    $('.image').not('.' + filter).hide(200);
+                    $('.image').filter('.' + filter).show(400);
+                }
+
+            });
+
+            $('.gallery').magnificPopup({
+
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+
+            });
+
+        });
+
+        let slides = document.querySelectorAll('.slide-container');
+        let index = 0;
+
+        function next() {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }
+        function prev() {
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add('active');
+        }
+    </script>
+
+
+</body>
+
+</html>
